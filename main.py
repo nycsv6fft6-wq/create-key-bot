@@ -123,4 +123,6 @@ async def unbankey(ctx, member: discord.Member):
 
     await ctx.send(f"{member.mention} est débanni du système de clés.")
 
-bot.run("TON_TOKEN")
+import os
+
+bot.run(os.getenv("TOKEN"))
